@@ -1,0 +1,97 @@
+1
+Function maxseqsum_dp takes -1.19209e-008us (-1.19209e-011ms, -1.19209e-014s) to finish the process.
+Answer is -1.
+Function maxseqsum_divide takes 0.1us (0.0001ms, 1e-007s) to finish the process.
+Answer is -1.
+Function maxseqsum_improve_exhaust takes 0.1us (0.0001ms, 1e-007s) to finish the process.
+Answer is -1.
+Function maxseqsum_exhaust takes -1.19209e-008us (-1.19209e-011ms, -1.19209e-014s) to finish the process.
+Answer is -1.
+
+10
+Function maxseqsum_dp takes 0.1us (0.0001ms, 1e-007s) to finish the process.
+Answer is 20.
+Function maxseqsum_divide takes 1.1us (0.0011ms, 1.1e-006s) to finish the process.
+Answer is 20.
+Function maxseqsum_improve_exhaust takes 0.6us (0.0006ms, 6e-007s) to finish the process.
+Answer is 20.
+Function maxseqsum_exhaust takes 2us (0.002ms, 2e-006s) to finish the process.
+Answer is 20.
+
+100
+Function maxseqsum_dp takes 0.8us (0.0008ms, 8e-007s) to finish the process.
+Answer is 60.
+Function maxseqsum_divide takes 15.3us (0.0153ms, 1.53e-005s) to finish the process.
+Answer is 60.
+Function maxseqsum_improve_exhaust takes 24us (0.024ms, 2.4e-005s) to finish the process.
+Answer is 60.
+Function maxseqsum_exhaust takes 833us (0.833ms, 0.000833s) to finish the process.
+Answer is 60.
+
+1000
+Function maxseqsum_dp takes 6.1us (0.0061ms, 6.1e-006s) to finish the process.
+Answer is 261.
+Function maxseqsum_divide takes 137.8us (0.1378ms, 0.0001378s) to finish the process.
+Answer is 261.
+Function maxseqsum_improve_exhaust takes 2196.8us (2.1968ms, 0.0021968s) to finish the process.
+Answer is 261.
+Function maxseqsum_exhaust takes 770487us (770.487ms, 0.770487s) to finish the process.
+Answer is 261.
+
+2000
+Function maxseqsum_dp takes 13.6us (0.0136ms, 1.36e-005s) to finish the process.
+Answer is 748.
+Function maxseqsum_divide takes 278.2us (0.2782ms, 0.0002782s) to finish the process.
+Answer is 748.
+Function maxseqsum_improve_exhaust takes 8745.3us (8.7453ms, 0.0087453s) to finish the process.
+Answer is 748.
+Function maxseqsum_exhaust takes 6.12906e+006us (6129.06ms, 6.12906s) to finish the process.
+Answer is 748.
+
+5000
+Function maxseqsum_dp takes 25.4us (0.0254ms, 2.54e-005s) to finish the process.
+Answer is 320.
+Function maxseqsum_divide takes 686.6us (0.6866ms, 0.0006866s) to finish the process.
+Answer is 320.
+Function maxseqsum_improve_exhaust takes 54408.8us (54.4088ms, 0.0544088s) to finish the process.
+Answer is 320.
+
+7000
+Function maxseqsum_dp takes 35.8us (0.0358ms, 3.58e-005s) to finish the process.
+Answer is 486.
+Function maxseqsum_divide takes 965.5us (0.9655ms, 0.0009655s) to finish the process.
+Answer is 486.
+Function maxseqsum_improve_exhaust takes 106902us (106.902ms, 0.106902s) to finish the process.
+Answer is 486.
+
+10000
+Function maxseqsum_dp takes 51.4us (0.0514ms, 5.14e-005s) to finish the process.
+Answer is 708.
+Function maxseqsum_divide takes 1412.7us (1.4127ms, 0.0014127s) to finish the process.
+Answer is 708.
+Function maxseqsum_improve_exhaust takes 218760us (218.76ms, 0.21876s) to finish the process.
+Answer is 708.
+
+100000
+Function maxseqsum_dp takes 466.6us (0.4666ms, 0.0004666s) to finish the process.
+Answer is 2007.
+Function maxseqsum_divide takes 14970.5us (14.9705ms, 0.0149705s) to finish the process.
+Answer is 2007.
+Function maxseqsum_improve_exhaust takes 2.24564e+007us (22456.4ms, 22.4564s) to finish the process.
+Answer is 2007.
+
+1000000
+Function maxseqsum_dp takes 4476.2us (4.4762ms, 0.0044762s) to finish the process.
+Answer is 3963.
+Function maxseqsum_divide takes 162877us (162.877ms, 0.162877s) to finish the process.
+Answer is 3963.
+
+10000000
+Function maxseqsum_dp takes 44628.4us (44.6284ms, 0.0446284s) to finish the process.
+Answer is 7602.
+Function maxseqsum_divide takes 1.77914e+006us (1779.14ms, 1.77914s) to finish the process.
+Answer is 7602.
+
+100000000
+Function maxseqsum_dp takes 450454us (450.454ms, 0.450454s) to finish the process.
+Answer is 25717.
