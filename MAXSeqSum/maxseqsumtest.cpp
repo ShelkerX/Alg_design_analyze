@@ -1,13 +1,13 @@
 #include <iostream>
-#include <vector>
-#include <fstream>
 #include <ctime>
 #include <string>
 #include <limits>
+#include <windows.h>
+#include <iomanip>
 
 using namespace std;
 
-const int MAXL = 100000000;
+const int MAXL = 400000000;
 const int MININF = numeric_limits<int>::min();
 int arr[MAXL];
 
@@ -16,83 +16,70 @@ int maxseqsum_improve_exhaust(const int *arr, const int len);
 int maxseqsum_divide(const int *arr, const int len);
 int maxseqsum_dp(const int *arr, const int len);
 int maxseqsum_timetest(const int *arr, const int len);
+float maxseqsum_run(const int type, const int *arr, const int len);
+void create_randarr(int *arr, const int len, const int min, const int max);
 
 int main(int argc, char **argv)
 {
-    if (argc == 3)
+    if (argc == 5)
     {
         int type = atoi(argv[1]);
-        ifstream arrs(argv[2], ios::in | ios::binary);
-        vector<int> vint;
+        int len = atoi(argv[2]);
+        int min = atoi(argv[3]);
+        int max = atoi(argv[4]);
 
-        int tmp;
-        while (!arrs.eof())
-        {
-            arrs >> tmp;
-            vint.push_back(tmp);
-        }
-
-        if (vint.size())
-        {
-            int len = (vint.size() < MAXL) ? vint.size() : MAXL;
-            for (int i = 0; i < len; i++)
-                arr[i] = vint[i];
-
-            int maxseqsum = MININF;
-<<<<<<< HEAD
-            //us clock
-            float usd;
-            LARGE_INTEGER cpuf;
-            LARGE_INTEGER sst, eet;
-            QueryPerformanceFrequency(&cpuf);
-            //get delta time
-            QueryPerformanceCounter(&sst);
-            maxseqsum_timetest(arr,len);
-            QueryPerformanceCounter(&eet);
-            usd = (eet.QuadPart - sst.QuadPart)*1000000.0f / cpuf.QuadPart;
-
-            QueryPerformanceCounter(&sst);
-            
-=======
-            clock_t st, et;
-            st = clock();
->>>>>>> parent of 23aa365... us timer complete
-            switch (type)
-            {
-            case 0:
-                maxseqsum = maxseqsum_exhaust(arr, len);
-                break;
-            case 1:
-                maxseqsum = maxseqsum_improve_exhaust(arr, len);
-                break;
-            case 2:
-                maxseqsum = maxseqsum_divide(arr, len);
-                break;
-            case 3:
-                maxseqsum = maxseqsum_dp(arr, len);
-                break;
-            }
-<<<<<<< HEAD
-            QueryPerformanceCounter(&eet);
-            
-            float us, ms, s;
-            us = (eet.QuadPart - sst.QuadPart)*1000000.0f / cpuf.QuadPart - usd;
-            ms = us/1000.0f;
-            s = ms/1000.0f;
-=======
-            et = clock();
-
->>>>>>> parent of 23aa365... us timer complete
-            string types[4] = {"maxseqsum_exhaust", "maxseqsum_improve_exhaust", "maxseqsum_divide", "maxseqsum_dp"};
-            cout << "Function " << types[type] << " takes " << (double)(((long long)et) - ((long long)st)) / CLOCKS_PER_SEC << "s to finish the process." << endl;
-            cout << "Answer is " << maxseqsum << "." << endl;
-        }
+        if (type < 0 || type > 3)
+            cout << "Type wrong." << endl;
+        else if (len > MAXL || len < 1)
+            cout << "Length wrong." << endl;
         else
-            cout << "The array is empty." << endl;
+        {
+            float sd, us, ms, s;
+            create_randarr(arr, len, min, max);
+            cout << "Array created." << endl;
+            for (sd = maxseqsum_run(-1, arr, len); type < 4; type++)
+            {
+                s = maxseqsum_run(type, arr, len) - sd;
+                ms = s * 1000.0f;
+                us = ms * 1000.0f;
+                string types[4] = {"maxseqsum_exhaust", "maxseqsum_improve_exhaust", "maxseqsum_divide", "maxseqsum_dp"};
+                cout << "Function " << types[type] << " takes " << us << "us(" << ms << "ms," << s << "s) to finish the process." << endl;
+            }
+        }
     }
     else
         cout << "Parameter wrong." << endl;
     return 0;
+}
+
+float maxseqsum_run(const int type, const int *arr, const int len)
+{
+    //us clock
+    LARGE_INTEGER cpuf;
+    LARGE_INTEGER sst, eet;
+    QueryPerformanceFrequency(&cpuf);
+    QueryPerformanceCounter(&sst);
+
+    switch (type)
+    {
+    case 0:
+        maxseqsum_exhaust(arr, len);
+        break;
+    case 1:
+        maxseqsum_improve_exhaust(arr, len);
+        break;
+    case 2:
+        maxseqsum_divide(arr, len);
+        break;
+    case 3:
+        maxseqsum_dp(arr, len);
+        break;
+    default:
+        maxseqsum_timetest(arr, len);
+    }
+    QueryPerformanceCounter(&eet);
+
+    return (eet.QuadPart - sst.QuadPart) * 1.0f / cpuf.QuadPart;
 }
 
 int maxseqsum_exhaust(const int *arr, const int len)
@@ -177,4 +164,20 @@ int maxseqsum_dp(const int *arr, const int len)
 int maxseqsum_timetest(const int *arr, const int len)
 {
     return 0;
+}
+
+void create_randarr(int *arr, const int len, const int min, const int max)
+{
+    int tmp, mod;
+    mod = (abs(max) > abs(min)) ? abs(max) : abs(min);
+    srand(time(NULL));
+    for (int i = 0; i < len; i++)
+    {
+        do
+        {
+            tmp = rand() % mod + 1;
+            tmp *= rand() % 2 ? -1 : 1;
+        } while (tmp < min || tmp > max);
+        arr[i] = tmp;
+    }
 }

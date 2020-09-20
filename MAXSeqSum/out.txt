@@ -1,0 +1,105 @@
+1
+Array created.
+Function maxseqsum_exhaust takes -0.1us(-0.0001ms,-1e-007s) to finish the process.
+Function maxseqsum_improve_exhaust takes -1.16861e-009us(-1.16861e-012ms,-1.16861e-015s) to finish the process.
+Function maxseqsum_divide takes -1.16861e-009us(-1.16861e-012ms,-1.16861e-015s) to finish the process.
+Function maxseqsum_dp takes -0.1us(-0.0001ms,-1e-007s) to finish the process.
+
+10
+Array created.
+Function maxseqsum_exhaust takes 0.6us(0.0006ms,6e-007s) to finish the process.
+Function maxseqsum_improve_exhaust takes 0.2us(0.0002ms,2e-007s) to finish the process.
+Function maxseqsum_divide takes 0.6us(0.0006ms,6e-007s) to finish the process.
+Function maxseqsum_dp takes 0.1us(0.0001ms,1e-007s) to finish the process.
+
+100
+Array created.
+Function maxseqsum_exhaust takes 329.7us(0.3297ms,0.0003297s) to finish the process.
+Function maxseqsum_improve_exhaust takes 9.6us(0.0096ms,9.6e-006s) to finish the process.
+Function maxseqsum_divide takes 6.1us(0.0061ms,6.1e-006s) to finish the process.
+Function maxseqsum_dp takes 0.4us(0.0004ms,4e-007s) to finish the process.
+
+1000
+Array created.
+Function maxseqsum_exhaust takes 313890us(313.89ms,0.31389s) to finish the process.
+Function maxseqsum_improve_exhaust takes 857.9us(0.8579ms,0.0008579s) to finish the process.
+Function maxseqsum_divide takes 50.4us(0.0504ms,5.04e-005s) to finish the process.
+Function maxseqsum_dp takes 2.8us(0.0028ms,2.8e-006s) to finish the process.
+
+2000
+Array created.
+Function maxseqsum_exhaust takes 2.61739e+006us(2617.39ms,2.61739s) to finish the process.
+Function maxseqsum_improve_exhaust takes 3587.3us(3.5873ms,0.0035873s) to finish the process.
+Function maxseqsum_divide takes 106.8us(0.1068ms,0.0001068s) to finish the process.
+Function maxseqsum_dp takes 4.3us(0.0043ms,4.3e-006s) to finish the process.
+
+5000
+Array created.
+Function maxseqsum_exhaust takes 3.85075e+007us(38507.5ms,38.5075s) to finish the process.
+Function maxseqsum_improve_exhaust takes 21671.2us(21.6712ms,0.0216712s) to finish the process.
+Function maxseqsum_divide takes 248.6us(0.2486ms,0.0002486s) to finish the process.
+Function maxseqsum_dp takes 9.5us(0.0095ms,9.5e-006s) to finish the process.
+
+7000
+Array created.
+Function maxseqsum_improve_exhaust takes 42896.2us(42.8962ms,0.0428962s) to finish the process.
+Function maxseqsum_divide takes 368.7us(0.3687ms,0.0003687s) to finish the process.
+Function maxseqsum_dp takes 13.7us(0.0137ms,1.37e-005s) to finish the process.
+
+10000
+Array created.
+Function maxseqsum_improve_exhaust takes 84277.2us(84.2772ms,0.0842772s) to finish the process.
+Function maxseqsum_divide takes 528.9us(0.5289ms,0.0005289s) to finish the process.
+Function maxseqsum_dp takes 19.6us(0.0196ms,1.96e-005s) to finish the process.
+
+50000
+Array created.
+Function maxseqsum_improve_exhaust takes 2.18126e+006us(2181.26ms,2.18126s) to finish the process.
+Function maxseqsum_divide takes 2840.2us(2.8402ms,0.0028402s) to finish the process.
+Function maxseqsum_dp takes 86us(0.086ms,8.6e-005s) to finish the process.
+
+100000
+Array created.
+Function maxseqsum_improve_exhaust takes 8.76668e+006us(8766.68ms,8.76668s) to finish the process.
+Function maxseqsum_divide takes 5993us(5.993ms,0.005993s) to finish the process.
+Function maxseqsum_dp takes 183.1us(0.1831ms,0.0001831s) to finish the process.
+
+200000
+Array created.
+Function maxseqsum_improve_exhaust takes 3.49428e+007us(34942.8ms,34.9428s) to finish the process.
+Function maxseqsum_divide takes 11991us(11.991ms,0.011991s) to finish the process.
+Function maxseqsum_dp takes 338.4us(0.3384ms,0.0003384s) to finish the process.
+
+500000
+Array created.
+Function maxseqsum_divide takes 31753.5us(31.7535ms,0.0317535s) to finish the process.
+Function maxseqsum_dp takes 907.5us(0.9075ms,0.0009075s) to finish the process.
+
+1000000
+Array created.
+Function maxseqsum_divide takes 63363.2us(63.3632ms,0.0633632s) to finish the process.
+Function maxseqsum_dp takes 1687.3us(1.6873ms,0.0016873s) to finish the process.
+
+5000000
+Array created.
+Function maxseqsum_divide takes 340024us(340.024ms,0.340024s) to finish the process.
+Function maxseqsum_dp takes 9326.4us(9.3264ms,0.0093264s) to finish the process.
+
+10000000
+Array created.
+Function maxseqsum_divide takes 699020us(699.02ms,0.69902s) to finish the process.
+Function maxseqsum_dp takes 18015.4us(18.0154ms,0.0180154s) to finish the process.
+
+50000000
+Array created.
+Function maxseqsum_divide takes 3.68823e+006us(3688.23ms,3.68823s) to finish the process.
+Function maxseqsum_dp takes 89934.6us(89.9346ms,0.0899346s) to finish the process.
+
+100000000
+Array created.
+Function maxseqsum_divide takes 7.74216e+006us(7742.16ms,7.74216s) to finish the process.
+Function maxseqsum_dp takes 205126us(205.126ms,0.205126s) to finish the process.
+
+400000000
+Array created.
+Function maxseqsum_dp takes 719302us(719.302ms,0.719302s) to finish the process.
